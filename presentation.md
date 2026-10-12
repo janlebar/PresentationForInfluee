@@ -5,10 +5,14 @@
 -->
 <!-- .slide: class="title-slide centered" -->
 # <span class="icon-blue"></span> Jan Lebar
-## Web Application Developer
+## Full-Stack Developer
 
 <div style="margin-top: 2em; font-size: 1.3em; color: #bdc3c7; font-style: italic;">
 Graphic Designer and Developer — Application to {{COMPANY_NAME}}
+</div>
+
+<div style="margin-top: 1em; font-size: 1.1em; color: #95a5a6;">
+React · Next.js · Node.js · TypeScript · Python · PostgreSQL
 </div>
 
 ---
@@ -16,11 +20,11 @@ Graphic Designer and Developer — Application to {{COMPANY_NAME}}
 ## <span class="icon-blue"></span> About Me
 
 <div class="highlight-box">
-<strong>Graphic designer and developer</strong> with a passion for modern technologies, web application development, and optimization.
+<strong>Full-stack developer and designer</strong> who builds complete products — from the database schema and API to the interface the user actually works with.
 </div>
 
-- <span class="icon-blue"></span> Experience across <b>front-end and back-end</b> development
-- <span class="icon-blue"></span> Work with Python, Flask, FastAPI, Next.js, React, Vue.js, and other modern web technologies
+- <span class="icon-blue"></span> Experience across <b>frontend and backend</b> — TypeScript, React, Next.js, Node.js, Python (Flask, FastAPI) and PostgreSQL
+- <span class="icon-blue"></span> I own features end to end: <b>database schema → API → React/Next.js UI</b>
 - <span class="icon-blue"></span> A combination of <b>technical and design skills</b> for a valuable contribution to your team
 
 ### Education
@@ -46,33 +50,33 @@ Graphic Designer and Developer — Application to {{COMPANY_NAME}}
 <div class="feature-grid">
 
 <div class="feature-card">
-<h3><span class="icon-blue"></span> Web Technologies</h3>
-HTML, CSS, JavaScript
-</div>
-
-<div class="feature-card">
-<h3><span class="icon-blue"></span> Programming and Frameworks</h3>
-Python, Flask, FastAPI, React, Next.js, Angular, Vue.js, Nuxt
+<h3><span class="icon-blue"></span> Frontend</h3>
+React, Next.js, TypeScript
 </div>
 
 <div class="feature-card">
 <h3><span class="icon-blue"></span> Backend and API</h3>
-Building web applications and APIs with Python, Flask, and FastAPI
+Node.js, TypeScript, Python, Flask, FastAPI and REST APIs
 </div>
 
 <div class="feature-card">
 <h3><span class="icon-blue"></span> Databases</h3>
-SQL, PostgreSQL, SQLite, and SQLAlchemy
+PostgreSQL and SQL — schema design, indexing and query performance
 </div>
 
 <div class="feature-card">
-<h3><span class="icon-blue"></span> SEO and Optimization</h3>
-Basic and technical SEO, web application optimization, and vector databases for Slovenian-language content
+<h3><span class="icon-blue"></span> Web Technologies</h3>
+HTML, CSS, JavaScript, Tailwind CSS
 </div>
 
 <div class="feature-card">
-<h3><span class="icon-blue"></span> AI and Data</h3>
-AI integration, data processing, and web scraping with Python and Cheerio
+<h3><span class="icon-blue"></span> Practices</h3>
+Git, responsive UI, web application performance and optimization
+</div>
+
+<div class="feature-card">
+<h3><span class="icon-blue"></span> AI and Integrations</h3>
+LLM-based assistants, semantic search and embeddings, and external services (payments, e-commerce, e-mail, cloud storage)
 </div>
 
 </div>
@@ -142,7 +146,7 @@ A React/Next.js application for displaying information about <b>medication side 
 - <span class="icon-blue"></span> Strong background in <b>graphic design</b>, problem solving, and communication
 - <span class="icon-blue"></span> I approach development through <b>user experience</b> and <b>visual design</b>
 - <span class="icon-blue"></span> I continuously expand my knowledge of modern web development
-- <span class="icon-green"></span> Python, FastAPI, APIs, databases, AI integration, and web application optimization
+- <span class="icon-green"></span> TypeScript, React, Next.js, Node.js, Python, Flask, FastAPI, PostgreSQL, AI integration and web application optimization
 
 ---
 

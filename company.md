@@ -25,16 +25,16 @@ Influee is a fast-growing <b>UGC (User-Generated Content) platform</b> that conn
 
 ## WHY_BULLETS
 - <span class="icon-blue"></span> Mission: <b>democratise video ad creation</b> by connecting brands with creators across Europe
-- <span class="icon-blue"></span> Full-stack ownership: <b>PostgreSQL schema → clean GraphQL API → polished React/Next.js UI</b>
-- <span class="icon-green"></span> Modern stack, <b>no legacy code</b> — latest Next.js, React Native and GraphQL
+- <span class="icon-blue"></span> Full-stack ownership: <b>PostgreSQL schema → API → polished React/Next.js UI</b>
+- <span class="icon-green"></span> Modern stack, <b>no legacy code</b> — latest Next.js, React Native and TypeScript
 - <span class="icon-blue"></span> Culture of <b>deep work</b> — minimal meetings, async communication and an <b>AI-first toolset</b> (Claude Code)
 
 ## WHY_NARRATIVE
-I want to work at Influee because it is exactly the kind of full-stack, product-focused role I am looking for: a small, fast-moving team where one person owns a feature from the PostgreSQL schema, through a well-designed GraphQL API, all the way to the React/Next.js interface the client actually uses.
+I want to work at Influee because it is exactly the kind of full-stack, product-focused role I am looking for: a small, fast-moving team where one person owns a feature from the PostgreSQL schema, through a clean API, all the way to the React/Next.js interface the client actually uses.
 
 My background is a rare mix of design and engineering. I started in design, UX and visual communication before moving into development, so I turn designs into high-quality, responsive UI components quickly — and I think about how a user experiences a product, not only how it is built. That is a real advantage on a platform built around rich media content.
 
-Technically I work end to end with TypeScript, React, Next.js, Node.js and PostgreSQL. I care about writing GraphQL queries and mutations that stay efficient and do not quietly turn into hundreds of database calls, and I like working close to SQL — understanding how queries execute and keeping them fast rather than hiding behind an ORM. I have built real-time chat, booking, scheduling, payments (Stripe) and dashboard-style interfaces, and I integrate external services such as payments, e-mail and cloud storage.
+Technically I work end to end with TypeScript, React, Next.js, Node.js, Python (Flask, FastAPI) and PostgreSQL. I care about writing efficient APIs and database access that does not quietly turn into hundreds of queries, and I like working close to SQL — understanding how queries execute and keeping them fast rather than hiding behind an ORM. I have built real-time chat, booking, scheduling, payments (Stripe) and dashboard-style interfaces, and I integrate external services such as payments, e-mail and cloud storage.
 
 I am also genuinely interested in <b>AI features</b>, especially LLM-based assistants and semantic search with embeddings, and I would love to help bring that next layer to a UGC product. Influee's deep-work culture and full-remote flexibility fit how I do my best work: focused, autonomous and shipping.
 
@@ -43,7 +43,7 @@ What They're Looking For
 
 ## REQUIRED_ITEMS
 <li>At least <b>2 years of frontend and backend</b> development experience</li>
-<li>Required experience with <b>React, Next.js and GraphQL</b></li>
+<li>Required experience with <b>React and Next.js</b></li>
 <li>Solid backend experience with <b>Node.js and TypeScript</b></li>
 <li>Good <b>SQL and PostgreSQL</b> — understanding how queries execute and keeping them fast, without hiding behind an ORM</li>
 <li>Strong <b>HTML, CSS, JavaScript and Git</b></li>
@@ -56,7 +56,7 @@ Bonus Points
 
 ## PREFERRED_ITEMS
 <li>Building <b>SaaS dashboard</b> interfaces</li>
-<li><b>GraphQL beyond the basics</b> — schema design, efficient resolvers, avoiding N+1</li>
+<li>Backend work with <b>Python, Flask and FastAPI</b> alongside Node.js</li>
 <li><b>Leading multiple features or projects</b> end to end</li>
 <li>Interest in <b>AI features</b>: LLM-based assistants, semantic search and embeddings</li>
 <li>Integrating external services: <b>payments, e-commerce, e-mail, cloud storage</b></li>
