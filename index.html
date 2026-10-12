@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application — Jan Lebar</title>
+
+    <!-- Reveal.js core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css" />
+    <!-- League theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/league.css" />
+    <!-- Custom presentation styles -->
+    <link rel="stylesheet" href="presentation.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"></div>
+    </div>
+
+    <!-- Reveal.js core -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <!-- Markdown plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js"></script>
+    <!-- Highlight plugin (for code blocks) -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+    <!-- Notes plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+
+    <script>
+      // Static content lives in presentation.md; company-specific text lives in
+      // company.md. This script fetches both, fills the {{TOKENS}}, and hands
+      // the result to reveal.js. To target a new company, edit company.md only.
+      (async function () {
+        const slides = document.querySelector(".reveal .slides");
+        try {
+          const [template, company] = await Promise.all([
+            fetch("presentation.md", { cache: "no-store" }).then((r) => r.text()),
+            fetch("company.md", { cache: "no-store" }).then((r) => r.text()),
+          ]);
+
+          const vars = parseCompany(company);
+          const markdown = template.replace(
+            /\{\{([A-Z0-9_]+)\}\}/g,
+            (_, key) => (vars[key] || "").trim()
+          );
+
+          if (vars.COMPANY_NAME) {
+            document.title = "Application to " + vars.COMPANY_NAME + " — Jan Lebar";
+          }
+
+          const section = document.createElement("section");
+          section.setAttribute("data-markdown", "");
+          section.setAttribute("data-separator", "^\\n---\\n");
+          section.setAttribute("data-separator-vertical", "^\\n--\\n");
+          section.setAttribute("data-separator-notes", "^Note:");
+
+          const tpl = document.createElement("script");
+          tpl.type = "text/template";
+          tpl.textContent = markdown;
+          section.appendChild(tpl);
+          slides.appendChild(section);
+
+          await Reveal.initialize({
+            hash: true,
+            transition: "slide",
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+          });
+        } catch (err) {
+          slides.innerHTML =
+            "<section><h2>Could not load the presentation</h2>" +
+            "<p>Serve this folder over a local web server so " +
+            "<code>presentation.md</code> and <code>company.md</code> can be fetched, e.g. " +
+            "<code>python3 -m http.server</code>.</p><pre></pre></section>";
+          slides.querySelector("pre").textContent = String(err);
+        }
+      })();
+
+      // Turn company.md into a { KEY: "value" } map. Each value is everything
+      // between one "## KEY" heading and the next (leading/trailing blank lines trimmed).
+      function parseCompany(text) {
+        const vars = {};
+        let key = null;
+        let buffer = [];
+        const flush = () => {
+          if (key !== null) vars[key] = buffer.join("\n").trim();
+        };
+        text.split(/\r?\n/).forEach((line) => {
+          const match = line.match(/^##\s+([A-Z0-9_]+)\s*$/);
+          if (match) {
+            flush();
+            key = match[1];
+            buffer = [];
+          } else if (key !== null) {
+            buffer.push(line);
+          }
+        });
+        flush();
+        return vars;
+      }
+    </script>
+  </body>
+</html>
